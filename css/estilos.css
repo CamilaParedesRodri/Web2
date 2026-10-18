@@ -1,0 +1,97 @@
+/* configuracion general*/
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8FAFC;
+    color:#105666;
+    line-height: 1.6;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+.encabezado{
+    background: linear-gradient(
+        135deg, #6fb8e6, #191939
+    );
+    color: #f2e199;
+    text-align: center;
+    padding: 46px 20px;
+
+}
+
+.encabezado h1{
+    font-size: 32px;
+    margin-bottom:  10px;
+    
+}
+
+.encabezado p{
+    font-size: 17px;
+    margin: 0;
+    
+}
+
+.navegacion{
+    background-color: #f7f4d5;
+    padding: 16px;
+}
+
+.navegacion ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.navegacion a{
+    color: #105666;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+
+
+}
+
+.navegacion a:hover{
+    color: #f2e199;
+}
+
+.bienvenida{
+    background-color: #f7f4d5;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bienvenida h1 {
+    color: #105666;
+}
+
+.imagen-principal{
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
