@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -21,27 +20,24 @@
             <section id="Inicio" class="bienvenida">
                 <h2> Bienvenidos al Laboratorio de JavaScript </h2>
                 <p id="dato"></p>
+                <p id="resultado"> </p>
+                <button id="boton-saludar">Saludar</button>
+                <script src="script.js">
             
+                    let persona = {
+                        nombre: "Jaime",
+                        saludar: function() {
+                            return "Hola, " + this.nombre + "!";
+                        }
+                    }
+                    console.log(persona.saludar());
+                    document.getElementById("dato").innerHTML = "mensaje: " + persona.saludar();
 
-            <p id="resultado"> </p>
-            <button onclick="saludar()"> Saludar </button>
-            
-            <script src="Web2\script.js">
-                
-            let persona = {
-                nombre: "Jaime",
-                saludar: function() {
-                    return "Hola, " + this.nombre + "!";
-                }
-            }
-            console.log(persona.saludar());
-            document.getElementById("dato").innerHTML = "mensaje: " + persona.saludar();
-
-
-            </script>
+                </script>           
             </section>
             
         </main>
 
     </body>
 </html>
+
