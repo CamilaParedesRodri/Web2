@@ -1,7 +1,9 @@
+<!--Autora: Camila Paredes -->
+
 <!DOCTYPE html>
 <html lang="es">    
     <head>
-            <meta charset="UFT-8">
+            <meta charset="UTF-8">
             <meta name="viewport"
                 content="width=device-width, initial-scale=1.0">
             <title>Portal Academico Universitario </title>
@@ -15,19 +17,19 @@
     <body>
         <header class="encabezado">
             <h1> Portal Académico Universitario </h1>
-            <p> Aprendizaje, Inovavción y Tecnología </p>
+            <p> Aprendizaje, Inovación y Tecnología </p>
         </header>
         <nav class="navegacion" arial-label="Menu Principal"> 
             <ul>
                 <li> <a href="#Inicio"> Inicio </a></li>
-                <li> <a href="#cursos"> Cursos </a></li>
+                <li> <a href="saludar.html"> Saludar </a></li>
                 <li> <a href="#noticias"> Noticias </a></li>
                 <li> <a href="#contacto"> Contacto </a></li>
             </ul>
 
         </nav>
         <!--contenido principal-->
-        <main> 
+        <main>       
             <section id="inicio" class="bienvenida"> 
                 <h2 > Bienvenidos al Portal Académico </h2>
                 <p> Este espacio esta diseñado para compartir
@@ -37,29 +39,31 @@
                 <img src="img\EPN.jpg" 
                 alt=" campus universitario"
                 class="imagen-principal" >
+
             </section>
 
             <section id="cursos" class="seccion-cursos">
                 <h2>Nuestras Asignaturas</h2>
                 <div class="contenedor-cursos"> 
-                    <article class="tarjeta">
+                    <article class="tarjeta">        
                         <h3> Base de datos </h3>
                         <p> Modelado relacional y consultas SQL</p>
                         <a href="#contacto"> Más información </a>
                     </article>
-                    <article>
+                    <article class="tarjeta">
                         <h3> Ingeniería de Software </h3>
                         <p> Requisitos , arquitecturas y pruebas</p>
                         <a href="#contacto"> Más información </a>
                     </article>
-                    <article>
+                    <article class="tarjeta">
                         <h3> Desarrollo de Software </h3>
                         <p> Introducción a HTML, CSS y JavaScript </p>
                         <a href="#contacto"> Más información </a>
                     </article>
-                </section>
-            </div>
-            <section id="noticias" class="nocticias">
+                </div>
+            </section>
+            
+            <section id="noticias" class="noticias">
                 <h2>Nuestras noticias Académicas</h2>
                 <article>
                     <h3>Nuevo laboratorio de desarollo web</h3>
@@ -68,6 +72,39 @@
                         14 de Octubre de 2026
                     </time>
                 </article>
+            </section>
+
+            <section class="horario">
+                <h2>Horario Académico</h2>
+                <div class="tabla-responsive" role="region" aria-label="Horario académico" tabindex="0">
+                    <table>
+                        <caption>Horario semanal de clases</caption>
+                        <thead>
+                            <tr>
+                                <th>Asignatura</th>
+                                <th>Días</th>
+                                <th>Hora</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Base de Datos</td>
+                                <td>Lunes y Miércoles</td>
+                                <td>08:00 - 10:00</td>
+                            </tr>
+                            <tr>
+                                <td>Ingeniería de Software</td>
+                                <td>Martes y Jueves</td>
+                                <td>10:00 - 12:00</td>
+                            </tr>
+                            <tr>
+                                <td>Desarrollo Web</td>
+                                <td>Viernes</td>
+                                <td>14:00 - 17:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
             <section id="contacto" class="contacto">
                 <h2>Contactos</h2>
@@ -82,6 +119,14 @@
                 </form>
 
             </section>
+            <section class="laboratorio-animacion">
+                <h2>Laboratorio de animaciones</h2>
+                <p>Ejemplo de movimiento con CSS.</p>
+                <div class="escenario">
+                    <div class="pelota"></div>
+                </div>
+            </section>
+        
         </main>
 
         <footer class="pie-pagina">
@@ -93,7 +138,5 @@
 
         </footer>
     </body>
-
-
 
 </html>
